@@ -3,7 +3,10 @@
 </div>
 @push(config('asayeditor.pushed-scripts-container'))
 <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+@if (in_array($language,['ar']))
 <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/translations/{{$language}}.js"></script>
+@endif
+
 <script>
     let editorOptions={
             language:'{{$language}}',
