@@ -3,10 +3,8 @@
 
 Adding configured text editor to laravel application.
 
-
-[Arabic](/Screenshots/ar.png)
-[English](/Screenshots/en.png)
-
+![Arabic](/screenshots/ar.png)
+![English](/screenshots/en.png)
 
 # Requirements
 
