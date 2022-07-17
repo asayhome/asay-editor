@@ -1,0 +1,24 @@
+{
+    "name": "asayhome/asay-editor",
+    "description": "adding configured text editor to laravel application",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Asayhome\\AsayEditor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdelrahman Saeed Elhassan",
+            "email": "abdosaeedelhassan@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Asayhome\\AsayEditor\\AsayEditorServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
