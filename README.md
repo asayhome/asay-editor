@@ -40,6 +40,42 @@ inside blade file:
     />
 ```
 
+when typing in inside the editor will auto fire event `textChange` that contain the typed content,
+you can change this event as you need by adding `firedEvent='EventName'` in the including editor tags
+as next:
+
+```
+ <livewire:asay-editor 
+    id="textEditor" 
+    language="ar" 
+    :placeholder="__('Type your text her')"
+    content="Editor content her" 
+    height="200px" 
+    firedEvent="textChange"
+    />
+```
+
+This event is livewire event you can get fired content inside blade file as follow:
+
+```
+<script>
+        Livewire.on('textChange',(content)=>{
+            console.log(content);
+        })
+</script>
+```
+
+Or you can get it inside livewire component by adding the event in inside component listeners array
+as follow:
+
+```
+ protected $listeners = ['textChange'];
+
+ public function textChange($content)
+    {
+        ...
+    }
+```
 
 ### Publishing config
 
